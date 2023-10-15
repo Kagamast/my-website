@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="keywords" content="web design, website, seo">
+    <title>Web design - get your own website today!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400&display=swap&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<body lang="en">
+    <div id="menu-toggle-wrap">
+        <button id="menu-toggle" onclick="toggleDropDown()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    <nav id="nav">
+        <a href="">Home</a>
+        <a href="#faq">FAQ</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+    <header class="main-head">
+        <img src="profile.jpeg" alt="Vojtěch Štýbar">
+        <h1>Web design</h1>
+        <p>When learning about a new company or a small business, most people today choose the internet as their primary source of information.
+             That’s why it is so important to have a web presence that represents you, whether you want to show them your ideas or what’s on the menu.</p>
+    </header>
+
+<div class="background" id="background"></div>
+
+    <h2>How does it work?</h2>
+
+    <section id="progress" class="progress">
+        <!-- make contacts clickable -->
+        <div class="progress-item">
+            <div class="progress-indicator first active"><div></div></div>
+            <img src="icons/mail.svg" alt="">
+            <h3>Contact</h3>
+            <p>The first step is to contact me and tell me what business you’re building. You can share your requests and plans or leave it up to me.
+            </p>
+            <img class="nextIcon" src="icons/next.svg" alt="">
+        </div>
+        <div class="progress-item">
+            <div class="progress-indicator"><div></div></div>
+            <img src="icons/sketch.svg" alt="">
+            <h3>First sketch</h3>
+            <p>After you’ve shown me the ideas you have about the project, I’ll be working on a design that I think suits your needs the best.</p>
+        </div>
+        <div class="progress-item">
+            <div class="progress-indicator"><div></div></div>
+            <img src="icons/full.svg" alt="">
+            <h3>Final design</h3>
+            <p>Once you agree upon a sketch you like, I will begin to code the actual webpage, which will later represent your brand.</p>
+        </div>
+        <div class="progress-item">
+            <div class="progress-indicator"><div></div></div>
+            <img src="icons/setup.svg" alt="">
+            <h3>Set up</h3>
+            <p>Until now, the webpage was nothing but a file on a computer. To change this, someone needs to register the domain, arrange the hosting, and finally upload the site to the internet. This can all be hard and overwhelming for a beginner, so I will arrange all this for you.</p>
+        </div>
+        <div class="progress-item">
+            <div class="progress-indicator last"><div></div></div>
+            <img src="icons/celeb.svg" alt="">
+            <h3>Finished</h3>
+            <p>Congratulations! You did it! Your website is now up and running and it can be accessed by anyone from around the world.</p>
+        </div>
+    </section>
+
+    <h2>FAQ</h2>
+
+    <section class="faq" id="faq">
+        <div class="faq-message">
+            <h3>How long does it take for you to finish all of this?</h3>
+            <p>This of course depends on a lot of variables; how quickly a client reacts to messages, and how big the project is.
+                 But if you can reply within a reasonable time and just want a basic website, it shouldn’t take much longer than two weeks.</p>
+        </div>
+        <div class="faq-message">
+            <h3>How much does it cost?</h3>
+            <p>Again, this is based on several factors including the size of the project and the demands you have, but if you just want a simple static website,
+                 you can expect a price of around 120€. But you also have to pay some additional fees to the hosting provider for things like domain registration and the hosting itself
+                  - this can cost anything from 20€ to approximately 40€ depending on what provider you choose.</p>
+        </div>
+        <div class="faq-message">
+            <h3>— What if I want to edit the website after it is already running? —</h3>
+            <p>Whether you want to change a menu item or the opening hours, you have many options to edit the site. Either you ask a web developer to change something for you,
+                 or I can implement a system, that updates certain parts of the website based on a google spreadsheet, so you can change it fast and without any hassle.</p>
+        </div>
+    </section>
+    <footer id="footer">
+        <div>
+            <h5>Useful links</h5>
+            <div class="footer-list">
+                <a class="footer-item" href="">home</a>
+                <a class="footer-item" href="/contact/">contact</a>
+            </div>
+        </div>
+        <div>
+            <h5>Contact</h5>
+            <div class="footer-list">
+                <span class="footer-item"><img src="social_icons/email.png" alt="">vojta.stybar@gmail.com</span>
+                <a class="footer-item" target="_blank" href="https://www.instagram.com/kagamast_" ><img src="social_icons/instagram.png" alt="">@kagamast_</a>
+                <a class="footer-item" target="_blank" href="https://www.linkedin.com/in/vojt%C4%9Bch-%C5%A1t%C3%BDbar-85bba1245/"><img src="social_icons/linkedin.png" alt="">Vojtěch Štýbar</a>
+                <a class="footer-item" target="_blank" href="https://www.facebook.com/profile.php?id=100080183675733"><img src="social_icons/facebook.png" alt="">Vojtěch Štýbar</a>
+            </div>
+        </div>
+        <div class="message-straight">
+            <h5>Message</h5>
+            <div>
+                <input type="email" name="email" id="email-input" placeholder="email">
+                <span id="email-warn" class="warning"></span>
+            </div>
+            <div>
+                <textarea name="message" id="message-input" placeholder="message" style="resize: none;"></textarea>
+                <span id="message-warn" class="warning"></span>
+            </div>
+            <button class="send-button" type="button" onclick="checkInfo()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.5 26">
+                    <path d="M 4 0 Q 0 0 0 4 L 0 8 Q 0 12 4 12 L 11 12 A 1 1 0 0 1 11 14 L 4 14 Q 0 14 0 18 L 0 22 Q 0 26 4 26 Q 7 26 10 24 L 24 15 Q 27 13 24 11 L 10 2 Q 7 0 4 0" fill="#fff"/>
+                </svg>
+            </button>
+        </div>
+    </footer>
+</body>
+<script src="contact/mail.js"></script>
+<script src="script.js" defer></script>
+<script src="animation.js" defer></script>
+</html>

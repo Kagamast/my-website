@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="keywords" content="web design, website, seo">
+    <title>Web design - get your own website today!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400&display=swap&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet"></head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+html {
+    height: -webkit-fill-available; /* We have to fix html height */
+}
+
+body {
+    min-height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    </style>
+<body lang="en">
+    <div id="menu-toggle-wrap">
+        <button id="menu-toggle" onclick="toggleDropDown()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    <nav id="nav">
+        <a href="">Home</a>
+        <a href="#faq">FAQ</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="background" id="background"></div>
+
+    
+    <section class="main-contact-content">
+        <form class="contact-straight" id="contact-straight">
+            <h3>Got a quick question?</h3>
+                        
+            <label for="email">Your e-mail:</label>
+            <div>
+                <input type="email" name="email" id="email-input" placeholder="email">
+                <span class="warning" id="email-warn"></span>
+            </div>
+
+            <label for="message">Your question / wish:</label>
+            <div>
+                <textarea name="message" id="message-input" placeholder="message" style="resize: none;"></textarea>
+                <span class="warning" id="message-warn"></span>
+            </div>
+            <button class="send-button" type="button" onclick="checkInfo()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.5 26">
+                    <path d="M 4 0 Q 0 0 0 4 L 0 8 Q 0 12 4 12 L 11 12 A 1 1 0 0 1 11 14 L 4 14 Q 0 14 0 18 L 0 22 Q 0 26 4 26 Q 7 26 10 24 L 24 15 Q 27 13 24 11 L 10 2 Q 7 0 4 0" fill="#fff"/>
+                </svg>
+            </button>
+        </form>
+        <section class="contact-options">
+            <a target="_blank" href="https://www.instagram.com/kagamast_" class="contact-option">
+                <img src="social_icons/instagram.png" alt="">
+                <h4 class="contact-option-title">Instagram<span class="material-symbols-sharp">arrow_outward</span></h4>
+            </a>
+            <button class="contact-option">
+                <img src="social_icons/email.png" alt="">
+                <h4 class="contact-option-title">Email<span class="material-symbols-sharp">arrow_outward</span></h4>
+            </button>
+            <a target="_blank" href="https://www.linkedin.com/in/vojt%C4%9Bch-%C5%A1t%C3%BDbar-85bba1245/" class="contact-option">
+                <img src="social_icons/linkedin.png" alt="">
+                <h4 class="contact-option-title">Linked in<span class="material-symbols-sharp">arrow_outward</span></h4>
+            </a>
+            <a target="_blank" href="https://discordapp.com/users/Kagamast#2205" class="contact-option">
+                <img src="social_icons/discord.png" alt="">
+                <h4 class="contact-option-title">Discord<span class="material-symbols-sharp">arrow_outward</span></h4>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100080183675733" class="contact-option">
+                <img src="social_icons/facebook.png" alt="">
+                <h4 class="contact-option-title">Facebook<span class="material-symbols-sharp">arrow_outward</span></h4>
+            </a>
+            <a target="_blank" href="https://t.me/Kagamast" class="contact-option">
+                <img src="social_icons/telegram.png" alt="">
+                <h4 class="contact-option-title">Telegram<span class="material-symbols-sharp">arrow_outward</span></h4>
+            </a>
+        </section>
+    </section>
+
+    <footer id="footer" style="grid-template-columns: 1fr 1fr;">        <div>
+        <h5>Useful links</h5>
+        <div class="footer-list">
+            <a class="footer-item" href="">home</a>
+            <a class="footer-item" href="/contact/">contact</a>
+        </div>
+    </div>
+    <div>
+        <h5>Contact</h5>
+        <div class="footer-list">
+            <span class="footer-item"><img src="social_icons/email.png" alt="">vojta.stybar@gmail.com</span>
+            <a class="footer-item" target="_blank" href="https://www.instagram.com/kagamast_" ><img src="social_icons/instagram.png" alt="">@kagamast_</a>
+            <a class="footer-item" target="_blank" href="https://www.linkedin.com/in/vojt%C4%9Bch-%C5%A1t%C3%BDbar-85bba1245/"><img src="social_icons/linkedin.png" alt="">Vojtěch Štýbar</a>
+            <a class="footer-item" target="_blank" href="https://www.facebook.com/profile.php?id=100080183675733"><img src="social_icons/facebook.png" alt="">Vojtěch Štýbar</a>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="script.js" defer></script>
+<script src="contact/mail.js" defer></script>
+</html>
